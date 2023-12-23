@@ -78,11 +78,24 @@ a {
     margin: auto;
 }
 
+.img-portada {
+    height: 180px;
+    width: 300px;
+    border: solid;
+    border: #ececec;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
 .img-serv {
     height: 180px;
     width: 300px;
     border: solid;
+    border: #ececec;
     border-radius: 5px;
+    margin: auto;
+    margin-top: 0.5rem;
 }
 
 .container-serv {
@@ -91,6 +104,11 @@ a {
     text-align: center;
     padding: 3rem;
     }
+
+.fodo-tarjeta {
+    padding: 1rem;
+
+}
 
 .tarjeta-serv {
     box-sizing: content-box;
@@ -103,9 +121,31 @@ a {
     color: antiquewhite;
 }
 
+@media screen and (max-width: 1200px) {
+    .img-portada{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+
+    .img-portada{
+        width: 160px;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .container-serv {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;   
+    }
+}
+
+@media screen and (max-width: 766px) {
+    
+    .img-portada {
+        width: 300px;
     }
 }
 
