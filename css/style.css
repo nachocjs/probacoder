@@ -77,3 +77,40 @@ a {
     width: 150px;
     margin: auto;
 }
+
+.img-serv {
+    height: 180px;
+    width: 300px;
+    border: solid;
+    border-radius: 5px;
+}
+
+.container-serv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 3rem;
+    }
+
+.tarjeta-serv {
+    box-sizing: content-box;
+    background: #00457C;
+    border: solid;
+    border-color: antiquewhite;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: auto;
+    color: antiquewhite;
+}
+
+@media screen and (max-width: 768px) {
+    .container-serv {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .img-serv {
+        width: 200px;
+    }
+}
