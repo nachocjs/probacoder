@@ -121,6 +121,44 @@ a {
     color: antiquewhite;
 }
 
+.fondo-contacto {
+    padding: 2rem;
+}
+
+
+.col-info {
+    background-color: #00457C;
+    color: antiquewhite;
+}
+.sub-titulo{
+    text-align: center;
+    padding: 1rem;
+}
+
+.info-contacto {
+    padding: 1rem;
+    text-align: center;
+}
+
+.redes-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.li-redes {
+    padding: 1rem;
+}
+
+.col-consulta {
+    background-color: #00457C;
+    color: antiquewhite;
+    padding: 1rem;
+}
+
+.mapa-contacto {
+    text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
     .img-portada{
         width: 200px;
@@ -132,6 +170,10 @@ a {
 
     .img-portada{
         width: 160px;
+    }
+
+    .redes-contacto {
+        display: none;
     }
     
 }
