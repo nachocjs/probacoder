@@ -52,6 +52,21 @@ body {
   margin: auto;
   margin-top: 0.5rem;
 }
+@media screen and (max-width: 1200px) {
+  .portada .img-portada {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .portada .img-portada {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .portada .img-portada {
+    width: 300px;
+  }
+}
 .portada .imagen-tarjeta {
   height: 250px;
   width: 150px;
@@ -63,6 +78,11 @@ body {
   grid-template-columns: 1fr 1fr;
   text-align: center;
   padding: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .container-serv {
+    grid-template-columns: 1fr;
+  }
 }
 .container-serv .fodo-tarjeta {
   padding: 1rem;
@@ -86,6 +106,11 @@ body {
   margin: auto;
   margin-top: 0.5rem;
 }
+@media screen and (max-width: 400px) {
+  .container-serv .fodo-tarjeta .tarjeta-serv .img-serv {
+    width: 200px;
+  }
+}
 
 .fondo-contacto {
   padding: 2rem;
@@ -108,6 +133,11 @@ body {
 }
 .fondo-contacto .col-info .redes-contacto .li-redes {
   padding: 1rem;
+}
+@media screen and (max-width: 990px) {
+  .fondo-contacto .col-info .redes-contacto {
+    display: none;
+  }
 }
 .fondo-contacto .col-info .mapa-contacto {
   text-align: center;
@@ -138,33 +168,4 @@ body {
 .filaFooter .colRedes {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .img-portada {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 990px) {
-  .img-portada {
-    width: 160px;
-  }
-  .redes-contacto {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container-serv {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 766px) {
-  .img-portada {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .img-serv {
-    width: 200px;
-  }
 }/*# sourceMappingURL=estilo.css.map */

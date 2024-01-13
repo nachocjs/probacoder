@@ -22,7 +22,26 @@
         border-radius: 5px;
         margin: auto;
         margin-top: 0.5rem;
-    }
+
+        @media screen and (max-width: 1200px) {
+            
+            width: 200px;
+        
+            
+        }
+
+        @media screen and (max-width: 990px) {
+
+             width: 160px;
+         }
+
+        @media screen and (max-width: 766px) {
+            
+             width: 300px;
+            
+        }
+
+         }
 
     .imagen-tarjeta{
         height: 250px;
@@ -37,7 +56,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem;  
+
+    @media screen and (max-width: 768px) {
+        
+            grid-template-columns: 1fr;   
+        
+    }
 
     .fodo-tarjeta {
         padding: 1rem;
@@ -51,7 +76,7 @@
             padding: 1rem;
             margin: auto;
             color: antiquewhite;
-
+            
             .img-serv {
                 height: 180px;
                 width: 300px;
@@ -60,12 +85,16 @@
                 border-radius: 5px;
                 margin: auto;
                 margin-top: 0.5rem;
+                @media screen and (max-width: 400px) {
+                        width: 200px;
+                    }
+                }
             }
         }
     
     }
 
-    }
+    
 
 .fondo-contacto {
     padding: 2rem;
@@ -90,6 +119,13 @@
 
             .li-redes {
                 padding: 1rem;
+            }
+
+            @media screen and (max-width: 990px) {
+                
+            display: none;
+                
+                
             }
         }
 
