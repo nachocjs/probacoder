@@ -1,0 +1,26 @@
+.filaFooter {
+    background-color: #00457C;
+    justify-content: center;
+    align-items: center;
+
+    .colMapa {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: center;
+        color: antiquewhite;
+        padding: 1rem;
+
+        .mapa {
+            border: solid;
+            border-color: antiquewhite;
+        }
+    }
+
+    .colRedes {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
