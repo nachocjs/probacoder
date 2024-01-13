@@ -96,6 +96,27 @@ body {
   padding: 1rem;
   margin: auto;
   color: antiquewhite;
+  width: 450px;
+}
+@media screen and (max-width: 1199px) {
+  .container-serv .fodo-tarjeta .tarjeta-serv {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 986px) {
+  .container-serv .fodo-tarjeta .tarjeta-serv {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .container-serv .fodo-tarjeta .tarjeta-serv {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container-serv .fodo-tarjeta .tarjeta-serv {
+    width: 300px;
+  }
 }
 .container-serv .fodo-tarjeta .tarjeta-serv .img-serv {
   height: 180px;
@@ -105,10 +126,23 @@ body {
   border-radius: 5px;
   margin: auto;
   margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+  border: solid antiquewhite;
+  transition: all, 1s;
 }
 @media screen and (max-width: 400px) {
   .container-serv .fodo-tarjeta .tarjeta-serv .img-serv {
     width: 200px;
+  }
+}
+.container-serv .fodo-tarjeta .tarjeta-serv .img-serv:hover {
+  width: 400px;
+  height: 280px;
+}
+@media screen and (max-width: 1199px) {
+  .container-serv .fodo-tarjeta .tarjeta-serv .img-serv:hover {
+    width: 300px;
+    height: 250px;
   }
 }
 

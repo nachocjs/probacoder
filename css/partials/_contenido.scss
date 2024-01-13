@@ -76,6 +76,20 @@
             padding: 1rem;
             margin: auto;
             color: antiquewhite;
+            width: 450px;
+            @media screen and (max-width: 1199px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 986px) {
+                width: 350px;
+            }
+            @media screen and (max-width: 915px) {
+                width: 320px;
+            }
+            @media screen and (max-width: 860px) {
+                width: 300px;
+            }
+
             
             .img-serv {
                 height: 180px;
@@ -85,10 +99,22 @@
                 border-radius: 5px;
                 margin: auto;
                 margin-top: 0.5rem;
+                margin-bottom: 0.7rem;
+                border: solid antiquewhite ;
+                transition: all, 1s;
                 @media screen and (max-width: 400px) {
                         width: 200px;
                     }
                 }
+            .img-serv:hover {
+                width: 400px;
+                height: 280px;
+                @media screen and (max-width: 1199px) {
+                    width: 300px;
+                    height: 250px;
+                    
+                }
+            }
             }
         }
     
