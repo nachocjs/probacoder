@@ -14,7 +14,8 @@ a {
 }
 
 body {
-    background-color: #ececec;
+    background: rgb(2,0,36);
+    background: linear-gradient(133deg, rgba(2,0,36,1) 0%, rgba(9,77,121,1) 0%, rgba(177,184,186,1) 0%, rgba(255,255,255,1) 97%, rgba(247,247,247,1) 100%);
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
