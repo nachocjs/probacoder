@@ -63,112 +63,144 @@
     </header>
 
     <!--Main Content-->
-
+    
     <main>
-      <section>
-        <div class="container titulo">
-          <div class="row filaTitulo">
-            <div class="col">
-              <h1>Estación Santa María</h1>
+      <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#home-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#home-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#home-carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="./img/fondo-estacion.jpg"
+              alt="estación"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Estación Santa María</h5>
             </div>
           </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./img/slide-gomeria.jpg"
+              alt="gomeria"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Gomería</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./img/lavadero-slide.jpg"
+              alt="lavadero"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lavadero</h5>
+            </div>
+          </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#home-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#home-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      </section>
 
-      <section class="tarjetas">
-        <div class="container portada">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div>
+        <div class="container">
+          <h1 class="page-header titulo-portada">
+            Bienvenido a Estación Santa María
+          </h1>
+  
+          <hr />
+  
+          <div class="row">
             <div class="col-md-4">
-              <div class="card">
-                <img src="./img/lavado-motor-y-chasis.png" class="card-img-top img-portada" alt="Lavado Motor">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h4><i class="fas fa-car"></i> Venta de Lubricantes</h4>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Lavado de Motor</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalTarjeta">
-                    Mas info...
-                   </button>
+                  <p>
+                    La gama de Lubricantes ANCAP abarca las líneas de auto motivos, industriales, marinos y grasas.
+                  </p>
+                  <a href="./pages/lubricantes.html" class="btn btn-outline-secondary"
+                    >Mas info...</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card">
-                <img src="./img/lubricantes.png" class="card-img-top img-portada" alt="Lubricantes">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h4><i class="fa-solid fa-car-on"></i> Lavado de motor </h4>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Lubricantes</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalTarjeta">
-                    Mas info...
-                   </button>
+                  <p>
+                    Te esperamos con la mejor maquinaria y productos de alta gama para dejar como nuevo tu vehiculo.
+                  </p>
+                  <a href="./pages/servicios.html" class="btn btn-outline-secondary"
+                    >Mas info...</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card">
-                <img src="./img/toyotires.png" class="card-img-top img-portada" alt="Toyo">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h4><i class="far fa-file-alt"></i> Contactanos!</h4>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Venta de Cubiertas</h5>
-                  <p class="card-text descripcionTarjeta">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  
-                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalTarjeta">
-                   Mas info...
-                  </button>
-
-                  <div class="modal fade" id="modalTarjeta" tabindex="-1" aria-labelledby="modalTarjeta" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresa tus consultas</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="modal-body">
-                            <form>
-                              <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input
-                                  type="text"
-                                  name="name"
-                                  value=""
-                                  class="form-control"
-                                  placeholder="Ingresar nombre completo..."
-                                />
-                              </div>
-                              <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input
-                                  type="email"
-                                  name="email"
-                                  value=""
-                                  class="form-control"
-                                  placeholder="Ingresar Email..."
-                                />
-                              </div>
-                              <div class="mb-3">
-                                <label for="message" class="form-label">Mensaje</label>
-                                <textarea
-                                  name="message"
-                                  rows="8"
-                                  cols="40"
-                                  class="form-control"
-                                  placeholder="Ingresar mensaje..."
-                                ></textarea>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-light" data-bs-dismiss="modal"> Enviar </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <p>
+                    Escribinos, llamanos, agendate... Te esperamos las 24hs para brindarte nuestros servicios!
+                  </p>
+                  <a href="./pages/contacto.html" class="btn btn-outline-secondary">Contacto</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
+    
 
     <!--Footer-->
     

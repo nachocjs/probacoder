@@ -41,6 +41,10 @@ body {
   color: antiquewhite;
 }
 
+.titulo-portada {
+  margin-top: 1.5rem;
+}
+
 .portada {
   padding: 2.5rem;
 }
@@ -137,13 +141,11 @@ body {
   }
 }
 .container-serv .fodo-tarjeta .tarjeta-serv .img-serv:hover {
-  width: 400px;
-  height: 280px;
+  transform: scale(1.2);
 }
 @media screen and (max-width: 1199px) {
   .container-serv .fodo-tarjeta .tarjeta-serv .img-serv:hover {
-    width: 300px;
-    height: 250px;
+    transform: 0.5;
   }
 }
 
