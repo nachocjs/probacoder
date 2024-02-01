@@ -185,6 +185,19 @@ body {
   padding: 1rem;
 }
 
+.titulo-gomeria {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.foto-gomeria {
+  border: solid white;
+}
+
+.texto-gomeria {
+  padding: 1rem;
+}
+
 .filaFooter {
   background-color: #00457C;
   justify-content: center;
